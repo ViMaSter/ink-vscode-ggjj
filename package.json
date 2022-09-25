@@ -2,7 +2,7 @@
     "name": "ink-ggjj",
     "displayName": "ink (GGJJ flavor)",
     "description": "Inkle's Ink scripting language support for Visual Studio Code with support for action lines from the Game Grumps: Joint Justice project",
-    "version": "2.0.0",
+    "version": "1.4.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/ViMaSter/ink-vscode-ggjj.git"
@@ -14,7 +14,7 @@
     "license": "MIT",
     "publisher": "vincent-mahnke",
     "engines": {
-        "vscode": "^1.16.0"
+        "vscode": "^1.71.0"
     },
     "categories": [
         "Programming Languages"
