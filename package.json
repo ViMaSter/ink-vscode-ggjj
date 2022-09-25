@@ -12,7 +12,7 @@
         "email": "vincent@mahn.ke"
     },
     "license": "MIT",
-    "publisher": "vincent-mahnke",
+    "publisher": "ViMaSter",
     "engines": {
         "vscode": "^1.71.0"
     },
