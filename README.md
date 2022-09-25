@@ -1,4 +1,9 @@
-# ink README
+# ink with GGJJ Action Line Support
+
+## Download and installation
+[Download from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ViMaSter.ink-ggjj)
+
+## Summary
 
 Support for Inkle's [Ink](https://github.com/inkle/ink) language in Visual Studio Code with extended support for action lines of the [Game Grumps: Joint Justice project](https://github.com/Studio-Lovelies/GG-JointJustice-Unity/wiki/Scripting-Basics-using-Inky#actions).
 
