@@ -190,6 +190,56 @@
         <key>name</key>
         <string>comment.todo</string>
       </dict>
+      <key>actionline</key>
+      <dict>
+        <key>begin</key>
+        <string>^(&amp;)(\w+)</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.action.name</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>keyword.action.name</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>$\n?</string>
+        <key>name</key>
+        <string>actionline</string>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#comments</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#inlinelogic</string>
+          </dict>
+          <dict>
+            <key>match</key>
+            <string>([:,])([^\{\},\s]*)</string>
+            <key>captures</key>
+            <dict>
+              <key>1</key>
+              <dict>
+                <key>name</key>
+                <string>keyword.action.name</string>
+              </dict>
+              <key>2</key>
+              <dict>
+                <key>name</key>
+                <string>string.other</string>
+              </dict>
+            </dict>
+          </dict>
+        </array>
+      </dict>
       <key>include</key>
       <dict>
         <key>begin</key>
@@ -615,6 +665,10 @@
       <dict>
         <key>patterns</key>
         <array>
+          <dict>
+            <key>include</key>
+            <string>#actionline</string>
+          </dict>
           <dict>
             <key>include</key>
             <string>#include</string>
