@@ -13,8 +13,17 @@ const PERMANENT_DIVERTS = [
 
 class DivertTarget {
     constructor ( public readonly name : string | null) { }
-    public line : number;
-    public readonly parentFile : NodeMap;
+    private _line_1: number;
+    public get line(): number {
+        return this._line_1;
+    }
+    public set line(value: number) {
+        this._line_1 = value;
+    }
+    private readonly _parentFile: NodeMap;
+    public get parentFile(): NodeMap {
+        return this._parentFile;
+    }
     public toCompletionItem () : CompletionItem {
         return new CompletionItem(this.name, CompletionItemKind.Reference);
     }
@@ -81,6 +90,9 @@ class StitchNode extends DivertTarget {
 }
 
 class KnotNode extends DivertTarget {
+    public get parentFile(): NodeMap {
+        return this._parentFile_1;
+    }
 
     public readonly stitches;
 
@@ -92,7 +104,7 @@ class KnotNode extends DivertTarget {
         public readonly name : string | null,
         public readonly startLine : number,
         public readonly endLine : number,
-        public readonly parentFile : NodeMap,
+        private readonly _parentFile_1: NodeMap,
         textContent : string,
         private readonly isFunction : boolean = false,
         private readonly lastLine : boolean = false
