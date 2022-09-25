@@ -1,23 +1,23 @@
 {
-    "name": "ink",
-    "displayName": "ink",
-    "description": "Inkle's Ink scripting language support for Visual Studio Code",
-    "version": "1.3.1",
+    "name": "ink-ggjj",
+    "displayName": "ink (GGJJ flavor)",
+    "description": "Inkle's Ink scripting language support for Visual Studio Code with support for action lines from the Game Grumps: Joint Justice project",
+    "version": "2.0.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sequitur/ink-vscode.git"
+        "url": "https://github.com/ViMaSter/ink-vscode-ggjj.git"
     },
     "author": {
-        "name": "Bruno Dias",
-        "email": "bruno.r.dias@gmail.com"
+        "name": "Vincent Mahnke",
+        "email": "vincent@mahn.ke"
     },
     "license": "MIT",
-    "publisher": "bruno-dias",
+    "publisher": "vincent-mahnke",
     "engines": {
         "vscode": "^1.16.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "activationEvents": [
         "onLanguage:ink"
@@ -30,7 +30,7 @@
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
-        "color": "#BEBEBE",
+        "color": "#F2B6FE",
         "theme": "light"
     },
     "contributes": {

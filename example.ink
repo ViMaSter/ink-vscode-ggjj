@@ -3,6 +3,8 @@ INCLUDE myFile.ink
 VAR example = "foo"
 VAR num = 23
 
+&ACTION:ParameterA,1.0 // with a comment
+
 // Ink language example file, for testing language features.
 // This is a comment.
 /* This is
